@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Change the font to Roboto */
+        body {
+            font-family: 'Roboto', sans-serif;
+            /* background-image: url(image/website.png); */
+        }
+
+        /* Add some padding and margins */
+        .container {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 0px 0px 10px 0px #0000001f;
+            /* background-color: red; */
+        }
+
+        /* Style the form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Style the form input fields */
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Style the form submit button */
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Add a hover effect on the submit button */
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <!-- <form action="connection.php" method="post"> -->
+            <input type="text" id="fname" name="firstName" placeholder="First Name">
+            <input type="text" id="lname" name="lastName" placeholder="Last Name">
+            <select id="gender" name="gender">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="o">Other</option>
+            </select>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="tel" id="number" name="number" placeholder="Phone Number">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form1.css">
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <img src="image/logo.png" alt="গল্পের জগত।" class="logo">
+        <ul>
+        <li><a href="#"><i class='bx bx-user'></i></a></li>
+        <li><a href="#">কবিতা</a></li>
+        <li><a href="#">গল্প</a></li>
+        <li><a href="#">ভূতের গল্প</a></li>
+        <li><a href="#"><i class='bx bxs-home' ></i></a></li>
+    </ul>
+    </header>
+    <br>
+    <div class="ti"><h3>স্বাগতম আপনাকে গল্পের জগতে।
+    </h3></div>
+    <div class="ti1"><marquee behavior="" direction=""><h2>এই ওয়েবসাইটে আপনি সব ধরনের গল্প/কবিতা ফ্রিতে পড়তে পারবেন।
+    </h2></marquee></div><br>
+    <h2 class="teg">ফ্রিতে গল্প/কবিতা পড়তে চাইলে আপনাকে অবশ্যই রেজিস্ট্রেশন করতে হবে।
+    </h2><br><br>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="connection.php" method="post">
+            <input type="text" id="fname" name="firstName" placeholder="First Name">
+            <input type="text" id="lname" name="lastName" placeholder="Last Name">
+            <select id="gender" name="gender">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="o">Other</option>
+            </select>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="tel" id="number" name="number" placeholder="Phone Number">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
